@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Covid-19 Vaccination Dashboard</title>
+	<link rel="icon" type="text/css" href="images/vaccine.png">
+
+	<!-- style sheet   -->
+  <link rel="stylesheet" href="styles.css">
+
+<!-- fonts awesome   -->
+<script src="https://kit.fontawesome.com/641ad72ded.js" crossorigin="anonymous"></script>
+
+<!-- google fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather+Sans:ital@1&family=Mitr:wght@300&family=Volkhov&display=swap" rel="stylesheet">
+
+
+
+  <!--boots-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<!--pie-->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'no of people vaccinated'],
+          ['Above 60',    8912649],
+          ['18-44',      15310558],
+          ['45-60',  12939730]
+          
+        ]);
+
+        var options = {
+          title: 'Vaccination by Age'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+
+
+</head>
+<body>
+   
+<section id="title" >
+ <div class="container-fluid">
+    <!-- Nav Bar -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark ">
+    <img src="images/vaccine.png " width="60" height="60">
+  <a class="navbar-brand" href="#">Covid-19 Vaccination Dashboard</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          search states
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          
+          <a class="dropdown-item menu" href="delhi.html">Delhi</a>
+          <a class="dropdown-item menu" href="telangana.html">Telangana</a>
+          <a class="dropdown-item menu" href="uttar-pradesh.html">Uttar Pradesh</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#down">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#download">Download</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+
+
+</div>
+</section>
+
+<section id="state">
+  <h3>UTTAR PRADESH</h3>
+</section>
+
+
+<section id="dash">
+
+
+<div class="row">
+  
+  <div class="card col-lg-4 ">
+  <div class="card-header">
+    Total Vaccination Doses
+    <div class="num"> 3,71,62,937</div>
+  </div>
+  <div class="card-body"> 
+  </div>
+  
+    <table>
+      <tr>
+         <td>Dose 1</td> <td>Dose 2</td>
+      </tr>
+      <tr>
+        <td>3,13,65,929</td> <td>57,97,008</td>
+      </tr>
+    </table>
+  
+</div>
+  
+  <div class="card col-lg-4">
+  <div class="card-header">
+    Sites Conducting Vaccination
+    <div class="num">3,408</div>
+  </div>
+  <div class="card-body">
+    </div>
+    <table>
+      <tr>
+         <td>Government</td> <td>Private</td>
+      </tr>
+      <tr>
+        <td>3,320</td> <td>88</td>
+      </tr>
+    </table>
+  
+</div>
+
+  <div class="card col-lg-4">
+  <div class="card-header">
+    Total Registrations
+    <div class="num">37,64,46,867</div>
+  </div>
+  <div class="card-body">
+    
+  </div>
+<table>
+      <tr>
+         <td>Age 18-44</td> <td>Age 45+</td>
+      </tr>
+      <tr>
+        <td>1,53,10,558</td> <td>2,18,52,379</td>
+      </tr>
+    </table>
+
+</div>
+
+</div>
+    
+</section>
+
+<section id="graphs">
+  <div id="piechart" class="graph" style="width: 900px; height: 500px;"></div>
+  
+</section>
+
+
+<section id="down">
+
+    <div class="row ">
+    <h6 class=" col-lg-3 col-md-6 col-sm-12 "><span class="hlink">Vaccination Services </span><br> <a href="https://selfregistration.cowin.gov.in/" class="blink">Register Members</a><br><a href="https://www.cowin.gov.in/#Search-Vaccination-Center" class="blink">Search Vaccination Slots</a><br><a href="https://selfregistration.cowin.gov.in/" class="blink">Book Vacinnation Slots</a><br><a href="https://selfregistration.cowin.gov.in/" class="blink">Download Certificate</a></h6>
+
+        <h6 class=" col-lg-3 col-md-6 col-sm-12 "><span class="hlink">Platforms</span><br><a href="https://sandbox.cowin.gov.in/" class="blink">CoWIN International</a><br><a href="https://app.cowin.gov.in/login" class="blink">Vaccinator </a><br><a href="https://verify.cowin.gov.in/" class="blink">Verify Certificates</a><br><a href="https://selfregistration.cowin.gov.in/" class="blink">Download Certificate</a></h6>
+
+
+        <h6 class=" col-lg-3 col-md-6 col-sm-12 "><span class="hlink">Resources</span><br><a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/User_Guide_Citizen%20registration_18%2B.pdf" class="blink">How To Get Vaccinated</a><br><a href="https://prod-cdn.preprod.co-vin.in/assets/pdf/Dos_and_Donts_for_Citizens.pdf" class="blink">Dos and Donts</a></h6>
+
+
+        <h6 class=" col-lg-3 col-md-6 col-sm-12 "><span class="hlink">Support</span><br><a href="https://www.cowin.gov.in/faq" class="blink">Frequently Asked Questions</a><br><a href="https://selfregistration.cowin.gov.in/" class="blink">Certificate Correction</a><br><a href="https://www.cowin.gov.in/#howcanweHelp" class="blink">Contact us</a></h6>
+  </div>
+
+  
+</section>
+
+
+<section id="download">
+  <span class="downbut">
+    <a class="btn btn-outline-light btn-lg download-button" href="https://apps.apple.com/in/app/mygov-india-%E0%A4%AE-%E0%A4%B0-%E0%A4%B8%E0%A4%B0%E0%A4%95-%E0%A4%B0/id1423088445" role="button"><i class="fab fa-apple"></i> Download</a>
+  
+  </span>
+  
+<span class="downbut"><a class="btn btn-outline-light btn-lg download-button" href="https://play.google.com/store/apps/details?id=in.mygov.mobile&hl=en" role="button"><i class="fab fa-google-play"></i> Download</a>
+</span>
+  
+</section>
+
+<!-- Footer -->
+
+  <footer id="footer">
+   <a href="https://twitter.com/mygovindia"><i class="fab fa-twitter ficon"></i></a>
+    <a href="https://www.facebook.com/MyGovIndia/"><i class="fab fa-facebook-f ficon"></i></a>
+    <a href="https://www.instagram.com/mygovindia/"><i class="fab fa-instagram ficon"></i></a>
+    <a href="https://www.youtube.com/mygovindia"><i class="fab fa-youtube ficon"></i></a>
+    
+    <p>© Copyright 2021 Shreya</p>
+
+  </footer>
+
+  <section id="sai">
+    <div class="row saipri">
+  <a target="_blank" href="http://www.digitalindia.gov.in" title="Digital India"><img title="Digital India (External Site that opens in a new window)" alt="Digital India" src="https://www.mygov.in/footer_service/images/digital-india-logo.png"></a>      <a target="_blank" href="http://data.gov.in" title="Data Portal"><img title="Data Portal (External Site that opens in a new window)" alt="Data Portal" src="https://www.mygov.in/footer_service/images/data-gov-logo.png"></a>     <a target="_blank" href="https://india.gov.in" title="National Portal of India"><img title="National Portal of India (External Site that opens in a new window)" alt="National Portal of India" src="https://www.mygov.in/footer_service/images/india-gov-logo.png"></a>     <a target="_blank" href="https://www.mygov.in" title="MyGov"><img title="MyGov (External Site that opens in a new window)" alt="MyGov" src="https://www.mygov.in/footer_service/images/mygov-footer-logo.png"></a>      <a title="MeitY (External Site that opens in a new window)" target="_blank" href="http://meity.gov.in/"><img title="Meity(External Site that opens in a new window)" alt="Meity" src="https://www.mygov.in/footer_service/images/Meity_logo.png"></a>      <a target="_blank" href="http://pmindia.gov.in" title="PMINDIA"><img title="PMINDIA(External Site that opens in a new window)" alt="PMINDIA" src="https://www.mygov.in/footer_service/images/pm-india-logo.png"></a>
+</div>
+
+  </section>
+
+
+
+</body>
+</html>

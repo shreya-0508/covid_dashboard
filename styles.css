@@ -1,0 +1,211 @@
+
+h1{
+	text-align: center;
+	font-family: 'Mitr', sans-serif;
+
+}
+
+h2{
+	text-align: center;
+	padding-top: 20px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+h3{
+	padding: 50px 50px 0px 50px;
+	font-family: 'Mitr', sans-serif;
+}
+h5{
+	padding-top: 13px;
+	padding-left: 5px;
+}
+h6{
+	
+	color: #000;
+}
+p{
+	color: #fff;
+}
+
+#title
+{
+	background-color: #121B74;
+}
+.navbar-brand{
+	padding-left: 12px;
+	font-family: 'Volkhov', serif;
+	font-size: 1.4rem;
+}
+
+.nav-link{
+	padding-left: 25px;
+	font-family: 'Volkhov', serif;
+}
+.menu{
+	font-family: 'Volkhov', serif;
+}
+
+#homepage{
+	background-color: #D0E8F2;
+	padding: 50px;
+	text-align: center;
+}
+
+
+.covid{
+	padding: 50px;
+}
+
+.text{
+	text-align: center;
+	padding: 20px 20px 20px 20px;
+}
+
+.testimonial-text{
+	padding-bottom: 5px;
+}
+
+.testimonial-image1
+{
+    align-content: center;
+	width: 25%;
+	padding: 10px 20px;
+}
+
+.testimonial-image
+{
+    width: 25%;
+    margin: 20px;
+    padding-left: 10px;
+    
+}
+
+.linkrow{
+   justify-content: center;
+}
+
+@media (max-width:  1028px)
+{
+	.testimonial-image{
+		width: 50%;
+	}
+	.testimonial-image1{
+		width: 50%;
+	}
+}
+
+.item{
+	padding-bottom: 10px;
+}
+
+.links{
+	
+	padding: 20px ;
+}
+
+#helpline{
+	background-color: #D0E8F2;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+.phone
+{
+	width: 5%;
+	padding-left: 10px;
+}
+.num{
+	color: #000;
+}
+
+#dash{
+	padding: 50px;
+}
+
+.card{
+	padding: 5px 20px 5px 20px;
+}
+
+.card-header{
+	text-align: center;
+}
+
+.linkhead{
+	padding: 20px;
+}
+
+
+#down{
+	padding: 50px;
+	background-color: #121B74 ;
+
+}
+
+
+.hlink{
+	padding: 20px 30px 40px 0px;
+	font-size: 1.6rem;
+	color: #fff ;
+	font-weight:550;
+	font-family: 'Volkhov', serif;
+}
+
+.blink
+{
+	padding: 20px 30px 20px 0px;
+	color: #fff ;
+    font-weight: 70;
+    font-size: 1rem;
+    font-family: 'Volkhov', serif;
+}
+
+#download{
+	background-color: #121B74 ;
+    padding: 10px 50px 0px 50px;
+    justify-content: center;
+    text-align: center;
+}
+.download-button{
+	padding: 20px 20px 0px 20px;
+
+}
+
+.downbut{
+	padding: 20px;
+}
+
+#footer
+{   
+    text-align: center;
+    padding: 5% 5% ;
+    background-color: #121B74 ;
+}
+.ficon{
+    margin: 20px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.ficon:hover{
+	color: #125D98;
+}
+
+#sai{
+	background-color: #000;
+	text-align: center;
+	padding: 25px 50px 25px 50px;
+}
+
+.saipri{
+	justify-content: center;
+}
+
+/*graphs*/
+
+#piechart{
+	padding: 50px;
+}
+#barchart_material{	
+	padding: 50px;	
+}
+.icn{
+	padding: 5px;
+}
